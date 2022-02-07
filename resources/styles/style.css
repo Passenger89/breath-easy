@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+section:not([class='header']) {
+  margin: 5rem 0;
+}
+
+nav .logo {
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  color: #fff;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 100%;
+  background: rgb(31, 64, 87);
+  border-bottom: 3px solid #fff;
+}
+
+nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: regular;
+}
+
+a {
+  text-decoration: none;
+}
+
+#cta {
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0.125rem 0.75rem;
+}
+
+#cta a {
+  color: #000;
+}
+
+nav .container li {
+  list-style-type: none;
+}
+nav .container a {
+  color: #fff;
+}
+nav .container a:hover,
+#cta a:hover {
+  color: lightblue;
+}
+
+.header {
+  min-height: 25rem;
+  background: center/cover no-repeat url('../images/hero.jpg');
+  color: #fff;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.header h1,
+p {
+  position: relative;
+  z-index: 99;
+}
+
+.header .container h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px #000;
+}
+.header .container p {
+  font-size: 2rem;
+}
+.header .container img {
+  width: 50%;
+  border: 4px solid white;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.boxes .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.boxes .container .products {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.boxes .container .team {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 12.5rem;
+  min-width: 15rem;
+  border: 3px solid white;
+}
+
+.box-text {
+  width: 100%;
+  padding: 1rem;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.product1 {
+  background: center / cover no-repeat url(../images/product1.jfif);
+}
+.product2 {
+  background: center / cover no-repeat url(../images/product2.jfif);
+}
+.product3 {
+  background: center / cover no-repeat url(../images/product3.png);
+}
+.team1 {
+  background: center / cover no-repeat url(../images/business-portrait-1.jfif);
+}
+.team2 {
+  background: center / cover no-repeat url(../images/business-portrait-2.jfif);
+}
+.team3 {
+  background: center / cover no-repeat url(../images/business-portrait-3.jfif);
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  height: 100%;
+  background-color: rgb(31, 64, 87);
+  color: #fff;
+}
+
+@media (max-width: 680px) {
+  .header .container {
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+
+  .boxes .container .products,
+  .team {
+    flex-direction: column;
+  }
+}
